@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bigContainer {
+  background-color: aqua;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.topContainer {
+  background-color: blue;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.firstTop {
+  background-color: chartreuse;
+  width: 100%;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+.secondTop {
+  background-color: rgb(40, 80, 115);
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.left {
+  background-color: rgb(26, 73, 57);
+  padding: 20px;
+  height: 100%;
+}
+
+.right {
+  background-color: rgb(26, 73, 57);
+  padding: 20px;
+  height: 100%;
+}
+
+.rightTop {
+  background-color: rgb(108, 72, 26);
+  padding: 20px;
+  height: 45%;
+  margin-bottom: 10px;
+}
+
+.rightBottom {
+  background-color: rgb(175, 127, 69);
+  padding: 20px;
+  height: 45%;
+  margin-bottom: 10px;
+}
+
+.supply-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 20px;
+  gap: 10px;
+}
+
+.supply-item {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  width: 140px;
+  height: 160px;
+  margin: 50px;
+  box-sizing: border-box;
+}
+
+.bottomContainer {
+  display: flex;
+  width: 100%;
+  height: 350px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #ddd;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.carousel-slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  flex: 0 0 auto;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #666;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.dots button.active {
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+  .supply-item {
+    width: calc(50% - 20px);
+  }
+}
